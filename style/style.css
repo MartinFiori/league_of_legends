@@ -404,6 +404,7 @@ h2 {
 .imagen-descriptiva {
   width: 45%;
   border-radius: var(--radius-5);
+  object-fit: cover;
 }
 
 .competiciones {
@@ -480,7 +481,7 @@ h2 {
 .region-content {
   padding: 16px;
   border-radius: var(--radius-10);
-  background-color: color-mix(in srgb, var(--black) 50%, transparent);
+  background-color: color-mix(in srgb, var(--black) 80%, transparent);
 }
 
 .region-container h3 {
