@@ -70,13 +70,6 @@ h2 {
 :root {
   /* Colour palette */
   --white: #f0e6d2;
-  /* --white-700: #14cccc;
-  --white-600: #16dfdf;
-  --white-500: #20e9e9;
-  --white-400: #33ebeb;
-  --white-300: #58eeee;
-  --white-200: #6af0f0;
-  --white-100: #a2f6f6; */
 
   --green: #0ac8b9;
   --green-700: #089b8f;
@@ -113,15 +106,6 @@ h2 {
   --gunmetal-300: #1b839d;
   --gunmetal-200: #1e91ae;
   --gunmetal-100: #21a0c0;
-
-  --dark-blue: #091428;
-  --dark-blue-700: #091428;
-  --dark-blue-600: #132953;
-  --dark-blue-500: #173264;
-  --dark-blue-400: #1a3a74;
-  --dark-blue-300: #1e4285;
-  --dark-blue-200: #224a96;
-  --dark-blue-100: #2653a6;
 
   --gold: #c89b3c;
   --gold-700: #cea650;
