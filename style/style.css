@@ -1,0 +1,645 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 16px;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  color: var(--platinum-500);
+  line-height: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: var(--font-boton);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 800;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* only values from 400 to 900 */
+  color: var(--gold);
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-size: var(--font-subtitulo);
+}
+
+h2 {
+  font-size: var(--font-grande);
+}
+
+:root {
+  /* Colour palette */
+  --white: #f0e6d2;
+  /* --white-700: #14cccc;
+  --white-600: #16dfdf;
+  --white-500: #20e9e9;
+  --white-400: #33ebeb;
+  --white-300: #58eeee;
+  --white-200: #6af0f0;
+  --white-100: #a2f6f6; */
+
+  --green: #0ac8b9;
+  --green-700: #089b8f;
+  --green-600: #0ac2b3;
+  --green-500: #0bd5c4;
+  --green-400: #3df5e6;
+  --green-300: #51f6e8;
+  --green-200: #64f7eb;
+  --green-100: #77f8ed;
+
+  --blue: #0397ab;
+  --blue-700: #03b2c9;
+  --blue-600: #03c4dd;
+  --blue-500: #04d5f1;
+  --blue-400: #0ee0fb;
+  --blue-300: #22e2fc;
+  --blue-200: #36e5fc;
+  --blue-100: #4ae7fc;
+
+  --lazuli: #005a82;
+  --lazuli-700: #0072a3;
+  --lazuli-600: #0081b8;
+  --lazuli-500: #008fcc;
+  --lazuli-400: #009de0;
+  --lazuli-300: #00abf5;
+  --lazuli-200: #0ab6ff;
+  --lazuli-100: #1fbcff;
+
+  --gunmetal: #0a323c;
+  --gunmetal-700: #0f4957;
+  --gunmetal-600: #125769;
+  --gunmetal-500: #15667a;
+  --gunmetal-400: #18748c;
+  --gunmetal-300: #1b839d;
+  --gunmetal-200: #1e91ae;
+  --gunmetal-100: #21a0c0;
+
+  --dark-blue: #091428;
+  --dark-blue-700: #091428;
+  --dark-blue-600: #132953;
+  --dark-blue-500: #173264;
+  --dark-blue-400: #1a3a74;
+  --dark-blue-300: #1e4285;
+  --dark-blue-200: #224a96;
+  --dark-blue-100: #2653a6;
+
+  --gold: #c89b3c;
+  --gold-700: #cea650;
+  --gold-600: #d2ae60;
+  --gold-500: #d7b670;
+  --gold-400: #dbbe80;
+  --gold-300: #e0c690;
+  --gold-200: #e4cea0;
+  --gold-100: #e9d6af;
+
+  --platinum: #a09b8c;
+  --platinum-700: #aca89a;
+  --platinum-600: #b6b2a5;
+  --platinum-500: #bfbbb0;
+  --platinum-400: #c8c5bc;
+  --platinum-300: #d1cfc7;
+  --platinum-200: #dad9d2;
+  --platinum-100: #e3e3dd;
+
+  --gray: #5b5a56;
+  --gray-700: #696863;
+  --gray-600: #74726d;
+  --gray-500: #7e7c77;
+  --gray-400: #888681;
+  --gray-300: #92908b;
+  --gray-200: #9c9a96;
+  --gray-100: #a6a4a0;
+
+  --black: #010a13;
+  --black-700: #021427;
+  --black-600: #031e3a;
+  --black-500: #04284e;
+  --black-400: #053161;
+  --black-300: #063b74;
+  --black-200: #074588;
+  --black-100: #084f9b;
+
+  /* Fonts sizes */
+  --font-chica: 0.8rem;
+  --font-boton: 1rem;
+  --font-mediana: 1.1rem;
+  --font-mediana2: 1.3rem;
+  --font-grande: 1.5rem;
+  --font-subtitulo: 2rem;
+  --font-titulo: 2.5rem;
+  --font-gigante: 3rem;
+
+  /* Border radius */
+  --radius-5: 5px;
+  --radius-10: 10px;
+  --radius-15: 15px;
+  --radius-20: 20px;
+  --radius-25: 25px;
+  --radius-30: 30px;
+  --radius-35: 35px;
+  --radius-40: 40px;
+  --radius-45: 45px;
+  --radius-50: 50px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+.mw-div {
+  max-width: 1024px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.mi-auto {
+  margin-inline: auto;
+}
+
+/* gradientes */
+.gradient-bg {
+  /* only bg */
+  background: rgb(9, 20, 40);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 20, 40, 1) 0%,
+    rgba(10, 20, 40, 1) 100%
+  );
+}
+
+.gradient-metal {
+  /* only hextech */
+  background: rgb(120, 90, 40);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 90, 40, 1) 0%,
+    rgba(200, 155, 60, 1) 100%
+  );
+}
+
+.gradient-magic {
+  /* only magic */
+  background: rgb(0, 90, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 90, 130, 1) 0%,
+    rgba(10, 200, 185, 1) 100%
+  );
+}
+
+.banner_principal {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.nav-container {
+  background: var(--black);
+  padding-inline: 10px;
+  position: fixed;
+  border-radius: 10px;
+  left: 25px;
+  top: 35vh;
+  width: 70px;
+}
+
+.nav-links {
+  width: fit-content;
+}
+
+.nav-link {
+  width: fit-content !important;
+}
+
+.nav-link a {
+  border-radius: var(--radius-10);
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  transition: all 250ms ease-in-out;
+  white-space: nowrap;
+}
+
+.nav-link p {
+  color: var(--white);
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: opacity 250ms ease-in-out, width 250ms ease-in-out;
+  margin: 0;
+}
+
+.nav-link a:hover {
+  width: 100%;
+  transition: all 250ms ease-in-out;
+  gap: 16px;
+}
+
+.nav-link a:hover p {
+  opacity: 1;
+  width: auto;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.section {
+  background-color: var(--gunmetal);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: var(--font-subtitulo);
+  font-style: italic;
+  padding-right: 1.5rem;
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: var(--font-grande);
+  text-align: center;
+  margin-block: 0.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--gunmetal);
+  border-radius: var(--radius-10);
+}
+
+.texto-introduccion {
+  text-align: center;
+}
+
+.imagen-texto {
+  gap: 1rem;
+}
+
+.imagen-descriptiva {
+  width: 45%;
+  border-radius: var(--radius-5);
+}
+
+.competiciones {
+  gap: 16px;
+}
+
+.imagen-descriptiva.baron_nashor {
+  object-fit: cover;
+}
+.imagen-descriptiva.mapa_lol {
+  object-fit: contain;
+}
+
+.lista-objetivos {
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.item-objetivos h4 {
+  font-size: var(--font-grande);
+  text-align: center;
+  margin-block: 0.5rem;
+}
+
+.item-objetivos {
+  gap: 16px;
+  padding: 16px;
+}
+
+/* .item-objetivos p, */
+.item-objetivos h5 {
+  color: var(--gold-500);
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.lista-mejora {
+  color: var(--green-400);
+  margin-block: 1rem;
+  gap: 1rem;
+}
+
+.mejora-item {
+  border-radius: var(--radius-10);
+  text-align: center;
+  gap: 6px;
+  font-size: var(--font-chica);
+  padding: 8px;
+  width: 33%;
+}
+
+.mejora-item p {
+  color: var(--platinum-00);
+}
+
+.mejora-icon {
+  /* color: var(--white); */
+  filter: invert(1) brightness(1.5);
+  height: 32px;
+  width: 32px;
+}
+
+.region-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  margin-block: 1rem;
+  padding: 1rem;
+  color: var(--white);
+}
+
+.region-content {
+  padding: 16px;
+  border-radius: var(--radius-10);
+  background-color: color-mix(in srgb, var(--black) 50%, transparent);
+}
+
+.region-container h3 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.region-container p {
+  color: var(--platinum-100);
+}
+
+.aguasturbias {
+  background-image: url("../assets/regiones/aguasturbias_ciudad.jpg");
+  background-size: cover;
+}
+
+.ciudad_bandle {
+  background-image: url("../assets/regiones/ciudad_de_bandle_ciudad.jpg");
+  background-size: cover;
+}
+
+.demacia {
+  background-image: url("../assets/regiones/demacia_ciudad.jpg");
+  background-size: cover;
+}
+
+.freljord {
+  background-image: url("../assets/regiones/freljord_ciudad.jpg");
+  background-size: cover;
+}
+
+.vacio {
+  background-image: url("../assets/regiones/vacio_ciudad.jpg");
+  background-size: cover;
+}
+
+.islas_sombras {
+  background-image: url("../assets/regiones/islas_sombras_ciudad.jpg");
+  background-size: cover;
+}
+
+.ixtal {
+  background-image: url("../assets/regiones/ixtal_ciudad.jpg");
+  background-size: cover;
+}
+
+.jonia {
+  background-image: url("../assets/regiones/jonia_ciudad.jpg");
+  background-size: cover;
+}
+
+.noxus {
+  background-image: url("../assets/regiones/noxus_ciudad.jpg");
+  background-size: cover;
+}
+
+.piltover {
+  background-image: url("../assets/regiones/piltover_ciudad.jpg");
+  background-size: cover;
+}
+
+.shurima {
+  background-image: url("../assets/regiones/shurima_ciudad.jpg");
+  background-size: cover;
+}
+
+.targon {
+  background-image: url("../assets/regiones/targon_ciudad.jpg");
+  background-size: cover;
+}
+
+.zaun {
+  background-image: url("../assets/regiones/zaun_ciudad.jpg");
+  background-size: cover;
+}
+
+.texto-sistema-clasificacion {
+  margin-bottom: 16px;
+}
+
+.ranks-img {
+  margin-block: 16px;
+}
+
+.lista-modos-juego {
+  color: var(--platinum-500);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lista-modos-juego-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lista-modos-juego-item img {
+  width: 20px;
+}
+
+.foto_perfil {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.footer {
+  border-radius: var(--radius-10);
+  padding: 16px;
+  background-color: var(--black-700);
+  gap: 16px;
+}
+
+.footer li,
+.footer p {
+  color: var(--white);
+}
+
+.footer a {
+  color: var(--lazuli-100);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.network-list {
+  display: flex;
+  gap: 8px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-15);
+  padding: 16px;
+  gap: 6px;
+}
+
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
